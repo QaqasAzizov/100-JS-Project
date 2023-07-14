@@ -3,7 +3,7 @@ const insert = document.getElementById("insert");
 const keyPressEl = document.querySelector(".keyPress");
 const keysEl = document.querySelector(".keys");
 const keys = document.querySelectorAll(".key span");
-const [key , code , keyCode] = keys
+const [key, code, keyCode] = keys;
 
 window.addEventListener("keydown", (event) => {
   keyPressEl.classList.add("hidden");
