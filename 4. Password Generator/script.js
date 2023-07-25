@@ -64,7 +64,7 @@ copyBtn.addEventListener("click", function (event) {
   }
 });
 
-backdropEl.addEventListener("click", function () {
+backdropEl.addEventListener("click", function (event) {
   backdropEl.classList.remove("active");
   modalEl.classList.remove("active");
 });
