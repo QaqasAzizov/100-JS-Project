@@ -34,3 +34,9 @@ h1 {
 .container {
   display: flex;
 }
+
+
+.menu-item {
+  cursor: pointer;
+  color: red;
+}

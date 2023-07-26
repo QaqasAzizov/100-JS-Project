@@ -5,105 +5,105 @@ const product_1 = {
   category: "T-Shirt",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "t-shirt 1.webp",
+  image: "images/t-shirt 1.webp",
 };
 const product_2 = {
   name: "Gray T-Shirt",
   category: "T-Shirt",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "t-shirt 2.webp",
+  image: "images/t-shirt 2.webp",
 };
 const product_3 = {
   name: "Blue T-Shirt",
   category: "T-Shirt",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "t-shirt 3.webp",
+  image: "images/t-shirt 3.webp",
 };
 const product_4 = {
   name: "Green Cap",
   category: "Cap",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "cap 1.webp",
+  image: "images/cap 1.webp",
 };
 const product_5 = {
   name: "White Cap",
   category: "Cap",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "cap 2.webp",
+  image: "images/cap 2.webp",
 };
 const product_6 = {
   name: "Black Cap",
   category: "Cap",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "cap 3.webp",
+  image: "images/cap 3.webp",
 };
 const product_7 = {
   name: "G1",
   category: "Glasses",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "glasses 1.webp",
+  image: "images/glasses 1.webp",
 };
 const product_8 = {
   name: "G2",
   category: "Glasses",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "glasses 1.webp",
+  image: "images/glasses 1.webp",
 };
 const product_9 = {
   name: "G3",
   category: "Glasses",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "glasses 3.webp",
+  image: "images/glasses 3.webp",
 };
 const product_10 = {
   name: "Brown Shoes",
   category: "Shoes",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "shoes 1.webp",
+  image: "images/shoes 1.webp",
 };
 const product_11 = {
   name: "White Shoes",
   category: "Shoes",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "cap 2.webp",
+  image: "images/shoes 2.webp",
 };
 const product_12 = {
   name: "White Shoes",
   category: "Shoes",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "cap 3.webp",
+  image: "images/shoes 3.webp",
 };
 const product_13 = {
   name: "Apple Watch",
   category: "Watch",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "Watch 1.webp",
+  image: "images/Watch 1.webp",
 };
 const product_14 = {
   name: "Samsung Watch",
   category: "Watch",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "cap 2.webp",
+  image: "images/Watch 2.webp",
 };
 const product_15 = {
   name: "Huawei Watch",
   category: "Watch",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus",
-  image: "cap 3.webp",
+  image: "images/Watch 3.webp",
 };
 
 const productArray = [
@@ -125,7 +125,7 @@ const productArray = [
 ];
 
 const box = document.querySelector(".box");
-const items = document.querySelector(".menu-items");
+const items = document.querySelectorAll(".menu-item");
 
 for (let i = 0; i < items.length; i++) {
   items[i].addEventListener("click", (e) => {
@@ -136,7 +136,7 @@ for (let i = 0; i < items.length; i++) {
       if (productArray[j].category == items[i].innerText) {
         let structure = `<div class="box">
         <div class="image">
-        ,img src="${productArray[j].image}" style="width:",</div>
+        <img src="${productArray[j].image}" style="width:"/></div>
         <div class="name">${productArray[j].name}</div></div>`;
         box.innerHTML += structure;
       }
